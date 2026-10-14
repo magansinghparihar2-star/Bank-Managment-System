@@ -3,11 +3,14 @@ package bank_management_system;
 public class conn {
 
     Connection c;
+    Statement s;
     public conn () {
         try {
-            Class.forName(com.mysql.cj.jdbc.Driver);
-            c = DriverManager.getConnection("jdbc:mysql:/// bankmanagementsystem", "root",
+            c = DriverManager.getConnection("jdbc:mysql:/// BankManagementSystem2", "root",
                     "magansingh@7869");
+            s = c.createStatement();
+
+
 
         } catch (Exception e) {
             System.out.println(e);
