@@ -6,7 +6,8 @@ public class conn {
     public conn () {
         try {
             Class.forName(com.mysql.cj.jdbc.Driver);
-            c = DriverManager.getConnection("jdbc:mysql:///");
+            c = DriverManager.getConnection("jdbc:mysql:/// bankmanagementsystem", "root",
+                    "magansingh@7869");
 
         } catch (Exception e) {
             System.out.println(e);
