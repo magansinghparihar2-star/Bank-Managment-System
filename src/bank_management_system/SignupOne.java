@@ -10,7 +10,7 @@ import java.util.Random;
 
 
 
-public class signupone  extends JFrame implements ActionListener {
+public class SignupOne extends JFrame implements ActionListener {
 
     long random;
     JTextField nameTextField, FnameTextField, dobTextField, emailTextField, addressTextField, cityTextField,
@@ -20,7 +20,7 @@ public class signupone  extends JFrame implements ActionListener {
     JDateChooser dateChooser;
 
 
-    signupone() {
+    SignupOne() {
         setLayout(null);
 
         Random ran = new Random();
@@ -222,7 +222,7 @@ public class signupone  extends JFrame implements ActionListener {
                 c.s.executeUpdate(query);
 
                 setVisible(false);
-                new signuptwo(formno).setVisible(true);
+                new SignupTwo(formno).setVisible(true);
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -231,7 +231,7 @@ public class signupone  extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new signupone(); {
+        new SignupOne(); {
 
         }
     }

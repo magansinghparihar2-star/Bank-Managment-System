@@ -92,7 +92,7 @@ public class login extends JFrame  implements ActionListener {
 
         } else if (ae.getSource() == signup) {
             setVisible(false);
-            new signupone().setVisible(true);
+            new SignupOne().setVisible(true);
             
 
         }

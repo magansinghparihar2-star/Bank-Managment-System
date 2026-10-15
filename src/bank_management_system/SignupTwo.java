@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class signuptwo  extends JFrame implements ActionListener {
+public class SignupTwo extends JFrame implements ActionListener {
 
     JTextField aadharTextField, panTexrField;
     JButton next;
@@ -16,7 +16,7 @@ public class signuptwo  extends JFrame implements ActionListener {
     String formno;
 
 
-    signuptwo(String formno) {
+    SignupTwo(String formno) {
         this.formno = formno;
         setLayout(null);
 
@@ -70,8 +70,8 @@ public class signuptwo  extends JFrame implements ActionListener {
         email.setBounds(100, 315, 200, 30);
         add(email);
 
-        String valQualification[] = {"Below High School", "High School", "Higher Secondary", "Bachelor's Degree (UG)",
-                "Master's Degree (PG)", "Doctorate", "Professional Degree"};
+        String valQualification[] = {"Below High School", "High School", "Higher Secondary", "Bachelor Degree",
+                "Master Degree", "Doctorate", "Professional Degree"};
         education = new JComboBox(valQualification);
         education.setBounds(300, 315, 400, 30);
         education.setBackground(Color.WHITE);
@@ -181,9 +181,8 @@ public class signuptwo  extends JFrame implements ActionListener {
         String existingaccount = null;
         if (eyes.isSelected()) {
             existingaccount = "Yes";
-
         } else if (eno.isSelected()) {
-            senoircitizen = "No";
+            existingaccount = "No";
         }
         String pan = panTexrField.getText();
         String aadhar = aadharTextField.getText();
@@ -202,7 +201,7 @@ public class signuptwo  extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new signuptwo("");
+        new SignupTwo("");
         {
 
         }
