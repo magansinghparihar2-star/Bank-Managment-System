@@ -220,6 +220,9 @@ public class signupone  extends JFrame implements ActionListener {
                         " '"+gender+"', '"+email+"', '"+marital+"', '"+address+"', '"+city+"', '"+pin+"'," +
                         " '"+state+"')";
                 c.s.executeUpdate(query);
+
+                setVisible(false);
+                new signuptwo(formno).setVisible(true);
             }
         } catch (Exception e) {
             System.out.println(e);
