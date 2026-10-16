@@ -30,7 +30,7 @@ public class login extends JFrame  implements ActionListener {
         add(text);
 
         JLabel cardno = new JLabel("card no:");
-        cardno.setFont(new Font("Raleway", Font.BOLD, 28));
+        cardno.setFont(new Font("inter", Font.BOLD, 28));
         cardno.setBounds(120, 150, 150, 30);
         add(cardno);
 
@@ -40,7 +40,7 @@ public class login extends JFrame  implements ActionListener {
         add(cardTextField);
 
         JLabel pin = new JLabel("PIN:");
-        pin.setFont(new Font("Raleway", Font.BOLD, 28));
+        pin.setFont(new Font("inter", Font.BOLD, 28));
         pin.setBounds(120, 220, 250, 30);
         add(pin);
 

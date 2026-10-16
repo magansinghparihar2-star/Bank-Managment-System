@@ -24,12 +24,12 @@ public class SignupTwo extends JFrame implements ActionListener {
 
 
         JLabel additionalDetails = new JLabel("page 2 : Additional Details");
-        additionalDetails.setFont(new Font("Raleway", Font.BOLD, 20));
+        additionalDetails.setFont(new Font("inter", Font.BOLD, 20));
         additionalDetails.setBounds(290, 80, 400, 40);
         add(additionalDetails);
 
         JLabel name = new JLabel("Religion :");
-        name.setFont(new Font("Raleway", Font.BOLD, 20));
+        name.setFont(new Font("inter", Font.BOLD, 20));
         name.setBounds(100, 140, 100, 30);
         add(name);
         String valReligion[] = {"Hindu", "Muslim", "Sikh", "Christian", "Other"};
@@ -39,7 +39,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         add(religion);
 
         JLabel Fname = new JLabel("Category :");
-        Fname.setFont(new Font("Raleway", Font.BOLD, 20));
+        Fname.setFont(new Font("inter", Font.BOLD, 20));
         Fname.setBounds(100, 190, 200, 30);
         add(Fname);
 
@@ -50,7 +50,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         add(category);
 
         JLabel DOB = new JLabel("Income :");
-        DOB.setFont(new Font("Raleway", Font.BOLD, 20));
+        DOB.setFont(new Font("inter", Font.BOLD, 20));
         DOB.setBounds(100, 240, 200, 30);
         add(DOB);
 
@@ -61,12 +61,12 @@ public class SignupTwo extends JFrame implements ActionListener {
         add(income);
 
         JLabel gender = new JLabel("Educational");
-        gender.setFont(new Font("Raleway", Font.BOLD, 20));
+        gender.setFont(new Font("inter", Font.BOLD, 20));
         gender.setBounds(100, 290, 200, 30);
         add(gender);
 
         JLabel email = new JLabel("Qualification :");
-        email.setFont(new Font("Raleway", Font.BOLD, 20));
+        email.setFont(new Font("inter", Font.BOLD, 20));
         email.setBounds(100, 315, 200, 30);
         add(email);
 
@@ -78,7 +78,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         add(education);
 
         JLabel marital = new JLabel("Occupation :");
-        marital.setFont(new Font("Raleway", Font.BOLD, 20));
+        marital.setFont(new Font("inter", Font.BOLD, 20));
         marital.setBounds(100, 390, 200, 30);
         add(marital);
 
@@ -89,27 +89,27 @@ public class SignupTwo extends JFrame implements ActionListener {
         add(occupation);
 
         JLabel pan = new JLabel(" Pan Number: ");
-        pan.setFont(new Font("Raleway", Font.BOLD, 20));
+        pan.setFont(new Font("inter", Font.BOLD, 20));
         pan.setBounds(100, 440, 200, 30);
         add(pan);
 
         panTexrField = new JTextField();
-        panTexrField.setFont(new Font("Raleway", Font.BOLD, 14));
+        panTexrField.setFont(new Font("inter", Font.BOLD, 14));
         panTexrField.setBounds(300, 440, 400, 30);
         add(panTexrField);
 
         JLabel aadhar = new JLabel(" Aadhar Number: ");
-        aadhar.setFont(new Font("Raleway", Font.BOLD, 20));
+        aadhar.setFont(new Font("inter", Font.BOLD, 20));
         aadhar.setBounds(100, 490, 200, 30);
         add(aadhar);
 
         aadharTextField = new JTextField();
-        aadharTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        aadharTextField.setFont(new Font("inter", Font.BOLD, 14));
         aadharTextField.setBounds(300, 490, 400, 30);
         add(aadharTextField);
 
         JLabel state = new JLabel(" Senior Citizen: ");
-        state.setFont(new Font("Raleway", Font.BOLD, 20));
+        state.setFont(new Font("inter", Font.BOLD, 20));
         state.setBounds(100, 540, 200, 30);
         add(state);
 
@@ -128,7 +128,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         seniorC.add(sno);
 
         JLabel pincode = new JLabel(" Existing Account: ");
-        pincode.setFont(new Font("Raleway", Font.BOLD, 20));
+        pincode.setFont(new Font("inter", Font.BOLD, 20));
         pincode.setBounds(100, 590, 200, 30);
         add(pincode);
 
@@ -150,7 +150,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         next = new JButton("Next");
         next.setBackground(Color.BLACK);
         next.setForeground(Color.WHITE);
-        next.setFont(new Font("Raleway", Font.BOLD, 14));
+        next.setFont(new Font("inter", Font.BOLD, 14));
         next.setBounds(620, 660, 80, 30);
         next.addActionListener(this);
         add(next);

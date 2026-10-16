@@ -27,38 +27,38 @@ public class SignupOne extends JFrame implements ActionListener {
         random =  Math.abs(ran.nextLong()% 9000L + 1000L) ;
 
         JLabel formno = new JLabel("APPLICATION FORM No." + random );
-        formno.setFont(new Font("Raleway", Font.BOLD, 38));
+        formno.setFont(new Font("inter", Font.BOLD, 38));
         formno.setBounds(140, 20, 600, 40);
         add(formno);
 
 
         JLabel personDetails = new JLabel("page 1 : Personal Details" );
-        personDetails.setFont(new Font("Raleway", Font.BOLD, 20));
+        personDetails.setFont(new Font("inter", Font.BOLD, 20));
         personDetails.setBounds(290, 80, 400, 40);
         add(personDetails);
 
         JLabel name = new JLabel("Name:" );
-        name.setFont(new Font("Raleway", Font.BOLD, 20));
+        name.setFont(new Font("inter", Font.BOLD, 20));
         name .setBounds(100, 140, 100, 30);
         add(name);
 
         nameTextField = new JTextField();
-        nameTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        nameTextField.setFont(new Font("inter", Font.BOLD, 14));
         nameTextField.setBounds(300, 140, 400,  30);
         add(nameTextField);
 
         JLabel Fname = new JLabel("Father's Name:" );
-        Fname.setFont(new Font("Raleway", Font.BOLD, 20));
+        Fname.setFont(new Font("inter", Font.BOLD, 20));
         Fname.setBounds(100, 190, 200, 30);
         add(Fname);
 
         FnameTextField = new JTextField();
-        FnameTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        FnameTextField.setFont(new Font("inter", Font.BOLD, 14));
         FnameTextField.setBounds(300, 190, 400,  30);
         add(FnameTextField);
 
         JLabel DOB = new JLabel("Date of Birth:" );
-        DOB.setFont(new Font("Raleway", Font.BOLD, 20));
+        DOB.setFont(new Font("inter", Font.BOLD, 20));
         DOB.setBounds( 100, 240, 200, 30);
         add(DOB);
 
@@ -68,7 +68,7 @@ public class SignupOne extends JFrame implements ActionListener {
         add(dateChooser);
 
         JLabel gender = new JLabel("Gender:" );
-        gender.setFont(new Font("Raleway", Font.BOLD, 20));
+        gender.setFont(new Font("inter", Font.BOLD, 20));
         gender.setBounds( 100, 290, 200, 30);
         add(gender);
 
@@ -87,17 +87,17 @@ public class SignupOne extends JFrame implements ActionListener {
         gendergroup.add(female);
 
         JLabel email = new JLabel("Email Address:" );
-        email.setFont(new Font("Raleway", Font.BOLD, 20));
+        email.setFont(new Font("inter", Font.BOLD, 20));
         email.setBounds( 100, 340, 200, 30);
         add(email);
 
         emailTextField = new JTextField();
-        emailTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        emailTextField.setFont(new Font("inter", Font.BOLD, 14));
         emailTextField.setBounds(300, 340, 400,  30);
         add(emailTextField);
 
         JLabel marital = new JLabel("Marital Status:" );
-        marital.setFont(new Font("Raleway", Font.BOLD, 20));
+        marital.setFont(new Font("inter", Font.BOLD, 20));
         marital.setBounds( 100, 390, 200, 30);
         add(marital);
 
@@ -123,49 +123,49 @@ public class SignupOne extends JFrame implements ActionListener {
 
 
         JLabel address = new JLabel(" Address: " );
-        address.setFont(new Font("Raleway", Font.BOLD, 20));
+        address.setFont(new Font("inter", Font.BOLD, 20));
         address.setBounds( 100, 440, 200, 30);
         add(address);
 
         addressTextField = new JTextField();
-        addressTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        addressTextField.setFont(new Font("inter", Font.BOLD, 14));
         addressTextField.setBounds(300, 440, 400,  30);
         add(addressTextField);
 
         JLabel city = new JLabel(" City: " );
-        city.setFont(new Font("Raleway", Font.BOLD, 20));
+        city.setFont(new Font("inter", Font.BOLD, 20));
         city.setBounds( 100, 490, 200, 30);
         add(city);
 
         cityTextField = new JTextField();
-        cityTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        cityTextField.setFont(new Font("inter", Font.BOLD, 14));
         cityTextField.setBounds(300, 490, 400,  30);
         add(cityTextField);
 
         JLabel state = new JLabel(" State: " );
-        state.setFont(new Font("Raleway", Font.BOLD, 20));
+        state.setFont(new Font("inter", Font.BOLD, 20));
         state.setBounds( 100, 540, 200, 30);
         add(state);
 
         stateTextField = new JTextField();
-        stateTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        stateTextField.setFont(new Font("inter", Font.BOLD, 14));
         stateTextField.setBounds(300, 540, 400,  30);
         add(stateTextField);
 
         JLabel pincode = new JLabel(" Pin code: " );
-        pincode.setFont(new Font("Raleway", Font.BOLD, 20));
+        pincode.setFont(new Font("inter", Font.BOLD, 20));
         pincode.setBounds( 100, 590, 200, 30);
         add(pincode);
 
         pinTextField = new JTextField();
-        pinTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        pinTextField.setFont(new Font("inter", Font.BOLD, 14));
         pinTextField.setBounds(300, 590, 400,  30);
         add(pinTextField);
 
         next =  new JButton("Next");
         next.setBackground(Color.BLACK);
         next.setForeground(Color.WHITE);
-        next.setFont(new Font("Raleway", Font.BOLD, 14));
+        next.setFont(new Font("inter", Font.BOLD, 14));
         next.setBounds(620, 660, 80, 30);
         next.addActionListener(this);
         add(next);
