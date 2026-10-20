@@ -3,6 +3,7 @@ package bank_management_system;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.*;
 
 public class login extends JFrame  implements ActionListener {
 
@@ -87,6 +88,21 @@ public class login extends JFrame  implements ActionListener {
             pinTextField.setText("") ;
 
         } else if (ae.getSource() == login) {
+            conn conn = new conn();
+            String cardnumber = cardTextField.getText();
+            String pinnumber = pinTextField.getText();
+            String query = "Select * from login Where cardnumber = '"+cardnumber+"' and pin = '"+pinnumber+"'";
+            try{
+               ResultSet rs =  conn.s.executeQuery(query);
+               if (rs.next()) {
+                   setVisible(false);
+                   new Transactions(pinnumber).setVisible(true);
+               } else {
+                   JOptionPane.showMessageDialog(null, "Incorret Card Number or Pin");
+               }
+            } catch (Exception e) {
+                System.out.println(e);
+            }
 
 
 

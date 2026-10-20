@@ -212,7 +212,7 @@ public class SignupOne extends JFrame implements ActionListener {
 
         try {
             if (name.equals("")) {
-                JOptionPane.showMessageDialog(null, "Nmae is  Required");
+                JOptionPane.showMessageDialog(null, "Name is  Required");
             }
             else {
                 conn c = new conn();

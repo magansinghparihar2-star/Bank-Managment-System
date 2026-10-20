@@ -193,7 +193,10 @@ public class SignupTwo extends JFrame implements ActionListener {
             c.s.executeUpdate(query);
             {
                 //signupthree
+                setVisible(false);
+                new SignupThree(formno).setVisible(true);
             }
+
         } catch (Exception e) {
             System.out.println(e);
         }
